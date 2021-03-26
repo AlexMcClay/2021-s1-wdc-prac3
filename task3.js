@@ -11,17 +11,22 @@ function disp() {
 
 // Task 3-2
 function get_time() {
+	var d = new Date();
+	var z = document.getElementsByClassName("post-time");
+	z[0].innerHTML = d;
+
+	var text = document.getElementById("post_text").value;
+	document.getElementsByClassName("post-content")[0].innerHTML = text;
 
 
-
-	var d = document.createElement("div");
+	/*var d = document.createElement("div");
 	d.innerHTML = new Date();
 	d.className = "post-time";
 	var z = document.getElementById("posts");
 	z.appendChild(d);
 
 
-	/*  OLD CODE
+	  OLD CODE
 	var date = document.createElement("div");
 	var node = document.createTextNode("This is new.")
 	date.appendChild = node;
@@ -29,7 +34,7 @@ function get_time() {
 	date.innerHTML = d;
 	date.setAttributes("class") =  "post-time";
 	document.getElementById("posts").appendChild(date);
-	*/
+	
 
 
 	var text_disp = document.createElement("div");
@@ -37,6 +42,7 @@ function get_time() {
 	text_disp.innerHTML = text;
 	text_disp.className = "post-content";
 	z.appendChild(text_disp);
+	*/
 
  
 }
