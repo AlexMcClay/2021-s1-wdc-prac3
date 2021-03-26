@@ -27,7 +27,7 @@ function get_time() {
 	var z = document.getElementById("posts");
 	z.appendChild(d);
 
-	var text_disp = document.createElement("div");
+	var text_disp = document.createElement("p");
 	var text = document.getElementById("post_text").value;
 	text_disp.innerHTML = text;
 	text_disp.className = "post-content";
