@@ -7,7 +7,7 @@
         <h1>This page shows the time</h1>
         <hr />
         <p class="time_box">The time is:</p>
-        <p id="current_time" class="time_box">THIS TEXT HERE</p>
+        <p id="current_time" class="time_box" name="input_name">THIS TEXT HERE</p>
         <button onclick="function1()">
             Click here for the Date
         </button>
@@ -15,7 +15,8 @@
         <script>
             function function1() {
                 var d = new Date();
-                document.getElementById("current_time").innerText = d;
+                var x = document.getElementsByTagName("p");
+                x[1].innerText = d;
             }
         </script>
     </body>
