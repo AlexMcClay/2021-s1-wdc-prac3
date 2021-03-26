@@ -21,7 +21,7 @@ function get_time() {
 	document.getElementsByClassName("post-content")[0].innerHTML = text;*/
 
 
-	var d = document.createElement("div");
+	var d = document.createElement("p");
 	d.innerHTML = new Date();
 	d.className = "post-time";
 	var z = document.getElementById("posts");
