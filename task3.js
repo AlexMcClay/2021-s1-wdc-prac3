@@ -21,17 +21,32 @@ function get_time() {
 	document.getElementsByClassName("post-content")[0].innerHTML = text;*/
 
 
-	var d = document.createElement("p");
-	d.innerHTML = new Date();
-	d.className = "post-time";
-	var z = document.getElementById("posts");
-	z.appendChild(d);
+	var ammount = document.getElementById("quantity").value;
+	for (var i = 0;i < parseInt(ammount); i++) {
+		var d = document.createElement("p");
+		d.innerHTML = new Date();
+		d.className = "post-time";
+		var z = document.getElementById("posts");
+		z.appendChild(d);
 
-	var text_disp = document.createElement("p");
-	var text = document.getElementById("post_text").value;
-	text_disp.innerHTML = text;
-	text_disp.className = "post-content";
-	z.appendChild(text_disp);
+
+		var text_disp = document.createElement("p");
+		var text = document.getElementById("post_text").value;
+		text_disp.innerHTML = text;
+		text_disp.className = "post-content";
+		if (document.getElementById('Blue').checked) {
+			text_disp.style.color = "Blue";
+
+		}
+		else if (document.getElementById('Red').checked) {
+			text_disp.style.color = "Red";
+
+		}
+		z.appendChild(text_disp);
+	}
+
+
+	
 	
 
  
