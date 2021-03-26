@@ -9,7 +9,7 @@
         <script src="task3.js"></script>
     </head>
 
-    <body>
+    <body id="body">
 
         <div id="main" class="container">
             <button class="right" onclick="hide_main()">MENU</button>
@@ -48,7 +48,7 @@
         <div id="menu" class="container" style="display:none;">
             <button class="right" onclick="hide_main()">BACK</button>
             <p>&nbsp;</p>
-            <span>Background Color:</span><input type="text">
+            <span>Background Color:</span><input type="text" id="Background_Color" onblur="change_background_color()">
         </div>
 
     </body>

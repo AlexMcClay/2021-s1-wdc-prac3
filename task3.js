@@ -51,6 +51,8 @@ function get_time() {
 
  
 }
+
+
 // Task 3-3
 function hide_main() {
 	if (main_state == 1) {
@@ -64,4 +66,11 @@ function hide_main() {
 
 		main_state = 1;
 	}
+}
+
+
+function change_background_color() {
+	var background = document.getElementById("Background_Color").value;
+	document.getElementById("body").style.background = background;
+
 }
