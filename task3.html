@@ -12,7 +12,7 @@
     <body>
 
         <div id="main" class="container">
-            <button class="right">MENU</button>
+            <button class="right" onclick="hide_main()">MENU</button>
             <h1>Part 3 - Javascript Playground</h1>
 
             <!-- Question 3.1 -->
@@ -47,8 +47,8 @@
             <hr />
         </div>
 
-        <div id="menu" class="container" style="display:none;">
-            <button class="right">BACK</button>
+        <div id="menu" class="container" style="display:true;">
+            <button class="right" onclick="hide_main()">BACK</button>
             <p>&nbsp;</p>
             <span>Background Color:</span><input type="text">
         </div>

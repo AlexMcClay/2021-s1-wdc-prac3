@@ -1,4 +1,5 @@
 var x = 0;
+var main_state = 1;
 
 function disp() {
 	x++;
@@ -15,4 +16,17 @@ function get_time() {
 	document.getElementsByClassName("post-content")[0].innerHTML = text;
 
  
+}
+function hide_main() {
+	if (main_state == 1) {
+		document.getElementById("main").style.display = "none";
+		document.getElementById("menu").style.display = "";
+		main_state = 0;
+	}
+	else if (main_state == 0) {
+		document.getElementById("main").style.display = "";
+		document.getElementById("menu").style.display = "none";
+
+		main_state = 1;
+	}
 }
